@@ -1,0 +1,137 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mozilla Splash Page</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+      <style>
+        /* Base styles */
+        html {
+          font-family: 'Open Sans', sans-serif;
+          background: url('pattern.png');
+        }
+    
+        body {
+          margin: 0 auto;
+          max-width: 1200px;
+          background-color: white;
+        }
+    
+        /* Header */
+        header {
+          position: relative;
+          height: 150px;
+          padding: 0 32.5px;
+        }
+    
+        header h1 {
+          font-size: 50px;
+          line-height: 150px;
+          margin: 0;
+        }
+    
+        header img {
+          position: absolute;
+          top: 32.5px;
+          right: 32.5px;
+          width: 100px;
+        }
+    
+        /* Main content area */
+        main {
+          background: #ccc;
+        }
+    
+        article {
+          padding: 20px;
+        }
+    
+        article h2 {
+          margin-top: 0;
+        }
+    
+        article p {
+          line-height: 2;
+        }
+    
+        iframe {
+          float: left;
+          margin: 0 20px 20px 0;
+          max-width: 100%;
+          border: none;
+        }
+    
+        /* Further Info Section */
+        .further-info {
+          background: #c13832;
+          padding: 40px 0;
+          box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5),
+                      inset 0 -3px 2px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+        }
+    
+        .further-info a {
+          float: left;
+          width: 25%;
+        }
+    
+        .further-info img {
+          width: 100%;
+          display: block;
+        }
+    
+        /* Red Panda Section */
+        .red-panda img {
+          display: block;
+          max-width: 100%;
+          width: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <h1>Mozilla</h1>
+        <img src="firefox_logo-only_RGB.png" alt="Firefox logo">
+      </header>
+    
+      <main>
+        <article>
+          <iframe src="https://www.youtube.com/embed/ojcNcvb1olg"
+                  title="Choose Firefox"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+    
+          <h2>Rocking the Free Web</h2>
+    
+          <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+    
+          <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+        </article>
+    
+        <section class="further-info">
+          <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="firefox_logo-only_RGB.png" alt="Firefox Browser">
+          </a>
+          <a href="https://www.mozilla.org/">
+            <img src="mozilla-dinosaur-head.png" alt="Mozilla Dinosaur Logo">
+          </a>
+          <a href="https://addons.mozilla.org/">
+            <img src="firefox-addons.jpg" alt="Firefox Add-ons">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/">
+            <img src="mdn.svg" alt="MDN Web Docs Logo">
+          </a>
+        </section>
+    
+        <section class="red-panda">
+          <picture>
+            <source media="(min-width: 800px)" srcset="red-panda.jpg">
+            <img src="red-panda.jpg" alt="Red panda resting on a branch">
+          </picture>
+        </section>
+      </main>
+    </body>
+    </html>
+    
